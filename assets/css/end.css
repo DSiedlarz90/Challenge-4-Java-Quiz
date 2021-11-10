@@ -1,0 +1,23 @@
+.form-container {
+    display: flex;
+    margin: 0;
+    font-size: 25px;
+}
+.form-container p {
+    align-content: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+#finalscore {
+    font-size: 25px;
+}
+
+.submit-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 22px;
+    background-color: rgb(118, 27, 141);
+    border-radius: 4px;
+}
