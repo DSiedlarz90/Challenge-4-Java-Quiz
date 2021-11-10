@@ -21,3 +21,8 @@ h2 {
     background-color: rgb(118, 27, 141);
     border-radius: 4px;
 }
+
+.submit-btn:hover {
+    background-color: rgb(228, 96, 221);
+    cursor: pointer; 
+}

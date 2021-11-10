@@ -28,8 +28,19 @@
 
 .choice-container:hover {
     background: rgb(228, 96, 221);
+    cursor: pointer;
+}
+#correct {
+    font-size: 50px;
+    color: gray;
+    border-top: 5px solid gray;
 }
 
+#wrong {
+    font-size: 50px;
+    color: gray;
+    border-top: 5px solid gray;
+}
 .correct {
     display: none;
 }
