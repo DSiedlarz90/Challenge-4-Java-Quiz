@@ -1,0 +1,31 @@
+.highscores {
+    display: flex;
+    justify-content: center;
+    padding-top: 250px;
+}
+
+.leaderboard {
+    font-size: 18px;
+    background: rgb(211, 177, 211);
+    font-weight: bold;
+}
+
+#btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 22px;
+    background-color: rgb(118, 27, 141);
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 5px 5px 0 black;
+    border-width: 0;
+}
+
+#btn:hover {
+    background-color: rgb(228, 96, 221);
+    cursor: pointer;
+}
+
+.goBack {
+    text-decoration: none;
+}
