@@ -1,0 +1,57 @@
+/* General Styling */
+:root {
+    background-color: white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highscore{
+    color: rgb(118, 27, 141);
+}
+
+.highscore:hover {
+    color: rgb(228, 96, 221);
+}
+
+/* Body Styling */
+.start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    padding-top: 250px;
+}
+
+.description {
+    text-align: center;
+}
+
+.start-btn {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 8px;
+    background-color: rgb(118, 27, 141);
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 5px 5px 0;
+}
+
+.start-btn:hover {
+    background-color: rgb(228, 96, 221);
+    cursor: pointer;
+}
