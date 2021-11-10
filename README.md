@@ -8,12 +8,12 @@ This is Challenge 4 of the Bootcamp. A Coding quiz with multiple-choice question
 
 ## Instructions
 1. Click "Start Quiz" button. A multiple choice test will begin
-* Timer is on top right corner of page. Total time is 75 seconds. There are 4 questions total.
-* Incorrect answers with deduct 10 seconds from the timer. Once all questions are answered, or the timer reaches zero, the game is over.
-* The timer is your score.
-* To View High Scores, click the link in the top left corner of page. This will show all current high scores.
-* Incorrect answeres will show a "Wrong!" statement at bottom of questions.
-* correct answers will show a "Correct!" statement at bottom of questions.
+  * Timer is on top right corner of page. Total time is 75 seconds. There are 4 questions total.
+  * Incorrect answers with deduct 10 seconds from the timer. Once all questions are answered, or the timer reaches zero, the game is over.
+  * The timer is your score.
+  * To View High Scores, click the link in the top left corner of page. This will show all current high scores.
+  * Incorrect answeres will show a "Wrong!" statement at bottom of questions.
+  * correct answers will show a "Correct!" statement at bottom of questions.
 
 2. When game is over, the must enter their initials and click "Submit" to save high score.
 
