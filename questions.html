@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Code Quiz</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/questions.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="header">
+                <a href="./highscores.html" class="highscore">View High Scores</a>
+                <p>Time: <span id="timer"></span></p>
+            </h1>
+        </header>
+
+        <div class="start">
+            <div id="game" class="intro">
+                <div id="hud">
+                    <h2 id="question" class="question">What is the answer to this question</h2>
+                    <div class="choice-container">
+                        <p class="choice-prefix">A.</p>
+                        <p id="choiceA" class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">B.</p>
+                        <p id="choiceB" class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">C.</p>
+                        <p id="choiceC" class="choice-text" data-number="3" type="submit">Choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">D.</p>
+                        <p id="choiceD" class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                    <div class="correct" id="correct">Correct!</div>
+                    <div class="wrong" id="wrong">Wrong!</div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./assets/js/questions.js"></script>
+</html>

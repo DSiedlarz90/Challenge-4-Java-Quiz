@@ -1,0 +1,39 @@
+.question {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.choice-prefix {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.choice-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.choice-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(118, 27, 141);
+    max-width: 250px;
+}
+
+.choice-container:hover {
+    background: rgb(228, 96, 221);
+}
+
+.correct {
+    display: none;
+}
+
+.wrong {
+    display: none;
+}
