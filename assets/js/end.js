@@ -1,3 +1,4 @@
+//Global Variables
 var timer = localStorage.getItem("finalscore");
 var finalscore = document.getElementById("finalscore");
 var saveScoreButton = document.getElementById("saveScoreButton");
@@ -7,10 +8,11 @@ gameOver = function () {
     console.log(timer);
 };
 
+//Function to save high scores 
 function saveHighScores(event) {
     event.preventDefault();
 
-    // stop function is initial is blank
+    // stop function if initial is blank
     if (initials.value === "") {
         alert("Please enter your initials!");
         return;
@@ -38,8 +40,10 @@ function saveHighScores(event) {
     window.localStorage.setItem("highscores", scoresArrayString);
 };
 
+//On window load, Run function gameOver();
 window.onload = gameOver();
 
+//Event listener for submit button after initials entered. Brings to highscore page.
 saveScoreButton.addEventListener("click", function(event){ 
     saveHighScores(event);
     return window.location.assign("./highscores.html");

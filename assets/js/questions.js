@@ -11,6 +11,7 @@ var choiceA = document.getElementById("choiceA");
 var choiceB = document.getElementById("choiceB");
 var choiceC = document.getElementById("choiceC");
 var choiceD = document.getElementById("choiceD");
+var maxQuestions = 4;
 questionIndex = 0
 
 //Questions for quiz
@@ -37,8 +38,7 @@ var questions = [
     },
 ];
 
-var maxQuestions = 4
-
+//Function to generate timer. If timer hits 0 games over.
 myTimer = function() {
     timer = timer - 1
     document.getElementById("timer").innerHTML = timer;
@@ -51,6 +51,7 @@ myTimer = function() {
 };
 setInterval(myTimer, 1000);
 
+//Function to start game when start quiz button clicked
 startGame = function() {
     questionCounter = 0
     questionIndex = 0
@@ -58,6 +59,7 @@ startGame = function() {
     myTimer();
 };
 
+//Function to cycle through questions within the quiz as necessary
 getNewQuestion = function() {
     question.textContent = questions[questionIndex].question;
     choiceA.textContent = questions[questionIndex].choices[0];
@@ -66,6 +68,9 @@ getNewQuestion = function() {
     choiceD.textContent = questions[questionIndex].choices[3];
 };
 
+//Function to check the answers. 
+//If correct, show Correct at bottom of screen and move to next.
+//If incorrect show Wrong at bottom of screen, deduct 10 seconds from timer, and move to next question.
 function checkAnswer(answer) {
     if(questions[questionIndex].answer === questions[questionIndex].choices[answer]) {
         var correct = document.getElementById("correct");
@@ -106,7 +111,7 @@ function chooseD () {
 
 
 startGame();
-
+//Event listeners for choices.
 choiceA.addEventListener("click", chooseA);
 choiceB.addEventListener("click", chooseB);
 choiceC.addEventListener("click", chooseC);

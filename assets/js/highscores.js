@@ -1,8 +1,11 @@
+//Global Variables
 var highScoreList = document.getElementById('#high-score');
 var clearHighScoreBtn = document.getElementsByClassName('.clearHighScore')
 
+//On page load, run showHighScores();
 window.onload = showHighScore();
 
+//Function to load high scores onto screen.
 function showHighScore() {
 
     var highScores = JSON.parse(localStorage.getItem('highscores')) || [];
@@ -20,6 +23,7 @@ console.log(highScores)
     };
 };
 
+//Function to clear highscores if button is clicked.
 function clearHighScores() {
     localStorage.clear();
     location.reload();
